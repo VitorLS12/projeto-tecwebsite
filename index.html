@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Burguer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body>
+    <header>
+        <nav id="menu">
+        <div id="logo"><span><img src="images/50264e93aa486b4e54e140e6c8fb973a.png" alt=""></span></div>
+        <span id="mburguer" class="material-symbols-outlined">
+            menu
+            </span>
+        </div>
+            <ul id="list-menu">
+                <li><a href="#">Casa</a></li>
+                <li><a href="#txt2">Produtos</a></li>
+                <li><a href="#txt3">Unidades</a></li>
+                <li id="contato"><a href="#txt4" >Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img id="burguer" src="images/banner-6-curiosidades-sobre-o-hamburguer.jpg" alt=" vários hamburgueres">
+        <br>
+
+        <h1 class="title"  > Nossa Casa</h1>
+
+        <article >
+
+        <h1 class="subtitle"> QUEM SOMOS? </h1>
+        <br>
+        <p>Iniciamos no ano de 1989 em Fortaleza/CE com o Dom Pastel, primeiro restaurante fundado por Afranio e Daniela Barreira. Esta unidade foi inspiração para o crescimento da rede Coco Bambu, que desde então vem encantando e atraindo clientes nos mais diversos estados do Brasil.
+
+            Considerado o maior e melhor restaurante do Brasil, com especialidade em frutos do mar, o Coco Bambu possui um amplo e variado cardápio, com comidas e bebidas deliciosamente diferenciadas, feitas com ingredientes frescos da mais alta qualidade. Os pratos são bem servidos e toda essa excelência é apresentada a preços acessíveis.
+            
+            Nossas unidades são amplas, possuem decoração rústica e elegante, oferecendo aos nossos clientes um ambiente sofisticado e aconchegante.
+            
+            Visite-nos e encante-se!</p>
+
+        </article>
+        <br>
+
+        <h1 class="title" id="txt2">Nossos Produtos</h1>
+
+        <article >
+            <h1 class="subtitle">COPO KIDS </h1>
+            <p> Para uma melhor experiência para seu filho</p>
+            <img src="images/copos-kids.png" alt="">
+        </article>
+        <br>
+        <article >
+            <h1 class="subtitle">CACHAÇA </h1>
+            <p>Feita em parceria com a Vale Verde,  a cachaça Coco Bambu tem um aroma e um sabor inconfundível. Envelhecida 3 anos em barril de carvalho, ela é uma novidade que vai cair no gosto de quem aprecia uma bebida de qualidade</p>
+            <img src="images/cachaca-coco-bambu.png" alt="">
+        </article>
+        <br>
+        <h1 id="txt3" class="title">Unidades</h1>
+        <article class="container">
+            <div class="restaurant">
+                <small>Encontar</small>
+                <h2>Restaurantes</h2>
+            
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <label for="iest"></label>
+                <div>
+                    <select name="estado" id="iest">
+                        <option disabled selected>Selecione um estado</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                    </select>
+                </div>
+            </div>
+            </form>
+        </article>
+        <br>
+    </main>
+    <footer>
+        <div class="ctt">
+            <h1 id="txt4">Contato :</h1>
+            <div class="tell">
+                <li>Telefone para contato:</li>
+                <li> (11) 1111-1111 </li>
+            </div>
+            <div class="icon">
+                <ul>
+                    <li><a href=""><img src="images/facebook.png" alt="icone facebook"></a></li>
+                    <li><a href=""><img src="images/instagram.png" alt="icone instagram"></a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="creator">
+                <p>Site ilustrativo Desenvolvido por <a href="https://www.instagram.com/vi_silva05/"> <strong>Vitor Lourenço</strong> . </a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

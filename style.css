@@ -1,0 +1,186 @@
+@charset "UTF_8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    background:rgb(255, 255, 255) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.438);
+}
+
+#menu{
+    margin:auto;
+    display:flex;
+    align-items:center;
+    padding-bottom: 1px; 
+} 
+#logo span >img {
+    padding: 2px;
+     width: 55px;
+     height: 55px;
+    
+}
+#logo{
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.534);
+    border: solid 2px black;
+    padding: 10px;
+}
+#mburguer{
+    display: flex;
+    font-size: 30px;
+    margin-left: 50vw;
+    min-width: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+#list-menu{
+    display: none;
+}
+
+#list-menu li{
+    margin: 20px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+#list-menu a {
+    
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    transition: 0.3s;
+}
+ #list-menu li:hover{
+    text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.26);
+}
+#contato a{
+    color: rgb(240, 118, 37);
+    
+}
+main{
+    background-color: white;
+    
+}
+main >article{
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: auto;
+    width: 70vw ;
+}
+
+img#burguer{
+    display: block;
+    width:100%;
+    
+    
+}
+h1.title{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+}
+h1.subtitle{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+ color: rgb(117, 60, 19);
+
+}
+main img{
+    display: flex;
+    margin: auto;
+
+}
+article > p{
+    color: rgb(90, 60, 24);
+    padding: 5px;
+    text-align: center;
+
+}
+.container{
+    margin: auto;
+    width: 50vw;
+    height: 90px;
+}
+.restaurant{
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+footer{
+    padding: 10px  0px  10px  0px ;
+    background-color: #472105;
+    color: white;
+    width: 100%;
+}
+.ctt{
+    background-color: #472105;
+    width: 100%;
+    height: 100%;
+}
+.ctt h1{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.tell{
+    margin: auto;
+    display: block;
+    padding-top: 10px;
+    width:100%;
+    
+}
+.tell li{
+    text-align: center;
+    margin: auto;
+    display: block;
+    
+}
+.icon{
+    display: flex;
+    
+}
+.icon ul{
+   display: flex;
+   margin: auto;
+   list-style: none;
+}
+.icon li{
+    cursor: pointer;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 20%;
+    background-color: white;
+    text-decoration: none;
+}
+.icon a{
+    padding: 3px;
+}
+.creator{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.creator a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
