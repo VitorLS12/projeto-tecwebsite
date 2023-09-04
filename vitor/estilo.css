@@ -89,7 +89,7 @@
     
     #container-pc {
         padding: 10px 0px 10px 0px;
-        box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.466);
+        box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.466);
         text-align: center;
         display: block;
         margin: 10px;
@@ -114,7 +114,7 @@
     #container-sac{
         margin: auto;
         padding: 10px;
-        background-color: #00132e00;
+        background-color: #00132e;
         color: white;
         
     }
