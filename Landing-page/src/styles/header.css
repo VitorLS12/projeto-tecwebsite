@@ -1,0 +1,73 @@
+@import url(variaveis.css);
+header{
+    width: 100%;
+    padding: 28px 8%;
+}
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-logo{
+    font-size: 24px;
+    color:var(--logo);
+}
+#nav-list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: var(--list-color);
+    font-weight: 600;
+}
+.nav-item.active a{
+    color: #312814;
+    border-bottom: 3px solid #2B7904;
+}
+#mobile-btn{
+    display: none;
+}
+#mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width:670px)
+{
+#nav-list, #navbar .btn-default{
+display: none;
+}
+
+#mobile-btn{
+    display: block;
+    border: 0px;
+    width: 50px;
+    height: 40px;
+    background-color: transparent;
+    font-size: 1.5rem;
+    transition: color .3s ease;
+    cursor: pointer;
+}
+#mobile-btn:hover{
+    color: rgba(0, 0, 0, 0.651);
+}
+#mobile-menu.active{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+}
+ #mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 12px;
+    margin: 12px 0px;
+    text-align: center;
+    
+}
+}

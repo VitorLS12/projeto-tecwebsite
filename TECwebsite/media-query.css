@@ -2,24 +2,9 @@
 
 @media screen and (min-width:1260px){
     main{
-        margin-left: 16%;
-        margin-right: 16%;
+        margin-left:auto;
+        margin-right: auto;
     }
-    #container{
-        display: flex ;
-        flex-flow: row wrap;
-        text-align: center;
-        margin: auto;
-    }
-    #container img{
-        padding: 10px;
-        margin: auto;
-    }
-    #container-pc {
-        padding: 10px 0px 10px 0px;
-        box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.466);
-        text-align: center;
-        margin: auto;
-        margin-bottom: 10px;
-    }
+    
+
 }

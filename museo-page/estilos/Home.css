@@ -1,0 +1,240 @@
+
+@import url(Variaveis.css);
+
+/* header */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+background-color: var(--color-2);
+}
+header{
+    
+    width: 100%;
+    padding: 25px 8%;
+}
+#mobile-nav,#mobile-btn{
+    display: none;
+}
+#nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+#nav-logo{
+    align-items: center;
+    color: var(--color-1);
+    display: flex;
+    font-size: 35px;
+    font-family: "Archivo Black", sans-serif;
+   
+}
+#nav-list{
+    display: flex;
+    justify-content: space-between;list-style: none;
+    font-size: 20px;
+    gap: 62px;
+    
+}
+#nav-list li{
+    font-family:'poppins' ;
+    
+}
+.nav-item a{
+text-decoration: none;
+color:rgb(0, 0, 0);
+    padding: 0.5em 0;
+    position: relative;
+}
+
+#nav-list a:before,
+#nav-list a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+#nav-list a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #501572;
+}
+#nav-list a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+#nav-list a:hover:before,
+#nav-list .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+#nav-list a:hover:after,
+#nav-list .current a:after {
+  max-width: 100%;
+}
+
+/* main */ 
+
+#home{
+    display: flex;
+    min-height: calc(100vh - 103px);
+    padding: 25px 2% 25px 7%;
+}
+#cta{
+    font-family:"Archivo Black" ;
+    color: rgb(0, 0, 0);
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.title{
+    font-size: 8rem;
+    font-weight: bolder;
+    color: #00000000;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #501572;
+}
+.subtitle{
+    padding-bottom: 10px;
+    font-size: 4.5rem;
+    color: #39075a;
+}
+#cta p{
+    font-style: oblique;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#banner{
+ width: 55%;
+}
+#banner img{
+   
+    width:100%;
+    height: 100%;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1170px) {
+    #home{
+        min-height: calc(100vh - 180px);
+        
+    }
+    #cta{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    #cta p{
+        text-align: center;
+        width: 45%;
+    }
+    #banner {
+        display:none;
+    }
+    
+}
+@media screen and (max-width: 716px){
+    #nav-list{
+        display: none;
+    }
+    #mobile-btn{
+        display: block;
+        border: none;
+        font-size: 1.5rem;
+        color:var(--color-1);
+        background: transparent;
+        cursor: pointer;
+        transition: all .0.5s;
+    }
+    #mobile-btn:hover{
+        color: #000000d7;
+        
+        transition: all 0.5s;
+        
+    }
+
+    #mobile-nav{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(0, 0%, 0%, 0.966);
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    .item-mobile{
+
+        color: white;
+        margin: 15px;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: end;
+        transition: all 0.3s;
+    }
+    .item-mobile:hover{
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #692c8d;
+        transition: all 0.3s;
+    }
+    #mobile-nav-list{
+        display: flex;
+        width: 100%;
+        height: 87%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        font-size: 2.3rem;
+        
+    }
+    .mobile-nav-item {
+        list-style: none;
+    }
+    .mobile-nav-item a{
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s;
+    }
+    .mobile-nav-item a:hover{
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #692c8d;
+        transition: all 0.3s;
+    }
+    .footer-mobile{
+        display: flex;
+        color: white;
+        justify-content: center;
+        font-style: italic;
+        padding: 15px;
+    }
+   
+}

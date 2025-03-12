@@ -39,7 +39,7 @@
             
         </nav>
     </header>
-    <main>
+    <main class="main-3">
 
         <div id="container-sac">
             <div id="mds">
@@ -68,9 +68,30 @@
                 </p>
                 
             </div>
+            <div class="cadastro">
+                <form action="gravar.jsp" method="post" name="form1" >
+                    <fieldset>
 
+                    <h2 id="title">Cadastro</h2>
+                    
+                    <label >Nome : </label>
+                    <input placeholder=" Digite seu Nome Completo." type="text" name="txtNome" id="txtNome">
+                    <span id="erroN"></span>
+                    <br>
+                    <label >Idade: </label>
+                    <input placeholder=" Digite sua Idade." type="text" name="txtIdade" id="txtIdade">
+                    <span id="erroI"></span>
+                    <br>
+                    <label >E-mail: </label>
+                    <input placeholder=" Digite seu E-mail." type="text" name="txtEmail" id="txtEmail">
+                    <span id="erroE"></span>
+                    <br>
+                    <input id="enviar" type="button" value="Enviar" onclick="verificar()">
+                    
+                    </fieldset>
+                </form>
+            </div>
         </div>
-
     </main>
     <footer>
         <p> <a id="logo" href="indexx.html"><spam>TEC</spam>website</a> 
@@ -78,4 +99,35 @@
     </footer>
 
 </body>
+    <script>
+    function verificar(){
+    
+        var n = document.getElementById("txtNome").value;
+        if ( n.length == 0 ){
+            document.getElementById("erroN").textContent = "Preencha o campo" ;
+            document.getElementById("txtNome").style.background = "#F08080" ;
+    
+        return false ;
+       }
+    
+        var i = document.getElementById("txtIdade").value;
+        if ( isNaN(i) || i.length == 0  ){
+            document.getElementById("erroI").textContent = "Preencha o campo" ;
+            document.getElementById("txtIdade").style.background = "#F08080" ;
+    
+        return false ;
+       }
+    
+        var e = document.getElementById("txtEmail").value; 
+        if ( e.indexOf("@") < 0 || e.length == 0 ){
+            document.getElementById("erroE").textContent = "Preencha o campo" ;
+            document.getElementById("txtEmail").style.background = "#F08080" ;
+    
+        return false ;
+       }
+    
+       document.form1.submit() ;
+       
+    }
+    </script>
 </html>
